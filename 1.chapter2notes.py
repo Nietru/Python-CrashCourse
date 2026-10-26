@@ -19,9 +19,26 @@ print(fave_language.rstrip()) # prints the string with trailing whitespace remov
 print(fave_language.lstrip()) # prints the string with leading whitespace removed
 print(fave_language.strip()) # prints the string with both leading and trailing whitespace removed
 
+
+
 # use double quotes in strings first.
 message1 = "One of my favorite languages is Python."
 print(message1) 
 
 #message2 = 'Python's a great language'       wont run because of the apostrophe cancelling out the single quotes
 #print(message2)
+
+
+# Integers and Arithmetic:
+
+a = 2+3
+b = 3-2
+c = 8/4
+d = 2*5
+e = 3**2  # ** = exponents
+
+# python supports the order of operations so use those parenthesis baby (:
+
+f = (2+3) * 4
+
+print (f" {a}\n {b}\n {c}\n {d}\n {e}\n {f}\n")
