@@ -43,4 +43,31 @@ print(bicycles)
 too_expensive = 'redline'
 bicycles.remove(too_expensive)
 print(bicycles)
-print(f"\nA {too_expensive.title()} is too expensive for me.")
+print(f"\nA {too_expensive.title()} is too expensive for me.\n")
+
+
+# Organizing a List:
+
+cars = ['bmw', 'toyota', 'subaru', 'audi']
+cars.sort()  # sorts alphabetically.
+print(cars)
+
+cars.sort(reverse=True)  # reverse alphabetical.
+print(cars)
+
+cars = ['bmw', 'toyota', 'subaru', 'audi']  # make the list unorganized again.
+print("\n Here is the original list:")
+print(cars)
+
+print('\n Here is the temporarily sorted list:')
+print(sorted(cars))  # temporarily sorts without changing original list.
+
+print('\n Here is the original list, again:')
+print(cars)
+
+# the reverse() method does not put the list in reverse-alphabetical order. it only reverses the original list:
+cars.reverse()
+print('\n Here is the list in reverse order:')
+print(cars)
+
+print(len(cars)) # len function - gives you the length (in elements) of any list. (starts with number 1, not 0)
