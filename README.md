@@ -5,3 +5,8 @@ coding refresher with notes
 ### - git and github
 ### - vsCode with python extension
 ### - python crash course (second edition) textbook by: Eric Matthes
+
+
+## Sidenote:
+### Enter the following into your terminal for "Zen of Python" reading.
+### import this
