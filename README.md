@@ -1,5 +1,5 @@
 # Python-CrashCourse
-coding refresher with notes
+### Coding Refresher with textbook notes.
 
 ## Tools Needed:
 ### - git and github
