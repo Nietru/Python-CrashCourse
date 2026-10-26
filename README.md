@@ -8,5 +8,5 @@ coding refresher with notes
 
 
 ## Sidenote:
-### Enter the following into your terminal for "Zen of Python" reading.
+### Enter the following into your terminal for "Zen of Python" reading:
 ### import this
