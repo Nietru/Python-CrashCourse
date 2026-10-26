@@ -19,3 +19,8 @@ fav_num = (8-4)
 message = (f"My favorite number is {fav_num}! But it does change quite often.")
 
 print(message)
+
+# you can also assign multiple variables in one line:
+x, y, z = (1, 2, 3)
+
+print(x, y, z)
