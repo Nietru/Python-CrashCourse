@@ -8,7 +8,7 @@ last_name = "Truman"
 
 person = (f"{first_name} {last_name}")
 
-message = "I hope you feel better.   " # whitespace in beginning, remove.
+message = "I hope you feel better.   " # whitespace in string, remove.
 
 print(f"{person}, {message}".rstrip())
 
