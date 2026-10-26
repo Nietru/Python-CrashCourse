@@ -3,7 +3,7 @@
 
 ## Tools Needed:
 ### - git and github
-### - vsCode with python extension
+### - vsCode (or alt ide) with python extension
 ### - Python Crash Course (second edition) textbook by: Eric Matthes
 
 ## Sidenote:
