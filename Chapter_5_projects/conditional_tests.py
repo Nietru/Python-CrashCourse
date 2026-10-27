@@ -40,3 +40,11 @@ if user in existing_users:
     print('\nThis username already exists. Please choose a different username.')
 else:
     print('This username is available (: Please proceed to the next step.)')
+
+pizza_toppings = ['pepperoni', 'pineapple', 'bacon']
+requested_topping = 'anchovy'
+
+if requested_topping not in pizza_toppings:
+    print('Special order coming through!')
+else:
+    print('Make the usual!')
