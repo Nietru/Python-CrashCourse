@@ -96,4 +96,38 @@ print(f"\nMy friend's favorite foods are: \n{friend_foods}")
 my_foods.append('cannoli')    # add different items to the lists to prove they are separate independent lists. 
 friend_foods.append('french-fries')
 print(f'\nMy favorite foods are: \n{my_foods}')
-print(f"\nMy friend's favorite foods are: \n{friend_foods}")  
+print(f"\nMy friend's favorite foods are: \n{friend_foods}\n")
+
+
+#### Tuples: Lists that cannot change - "immutable" in development terminology  ####
+
+# Defining a Tuple:
+
+dimensions = (200, 50)    # tuples use parenteses instead of square brackets like regular lists.
+print(dimensions[0])
+print(dimensions[1])
+print('\n')
+
+#dimensions[0] = 250      # Output: 'TypeError: 'tuple' object does not support item assignment'  Cannot perform a change to a tuple.
+#print(dimensions)
+
+# tuples are defined by the comma, the parenthesis are just for readability. So even with one item in the tuple, you must have a trailing comma. ex: tup = (3,)
+
+for dimension in dimensions:
+    print(dimension)     # forloops work the same for tuples as lists.
+print('\n')
+
+# Writing over a Tuple:
+
+dimensions = (200, 50)
+print("Original dimensions:")
+for dimension in dimensions:
+    print(dimension)
+print('\n')
+
+dimensions = (300, 500) 
+print("Modified dimensions:")   # you can change a tuple by redefining the variable associated with it. Not able to just change the elements.
+for dimension in dimensions:
+    print(dimension)
+print('\n')
+
