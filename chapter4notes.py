@@ -62,7 +62,38 @@ print(sum(digits)) # sum, 45
 
 print('\n')
 
-# A list Comprehension: consolidates many lines of code into a single line of code, producing the same result.
-
-squares = [value**2 for value in range(1, 11)]
+squares = [value**2 for value in range(1, 11)] # a 'List Comprehension' consolidates many lines of code into a single line of code, producing the same result.
 print(squares)
+
+
+# Working with Part of a List:
+
+players = ['charles', 'martina', 'michael', 'florence', 'eli'] # slicing does not change the original list.
+print(players[0:3])  # remember the 3 is exclusive so output will inclued indexed 0 - 2
+print(players[:4])  # omit first number in a slice, python starts at beg. of list.
+print(players[2:])  # omit last number in slice, python goes to end of list.
+# remember a negative input, in a slice for this example, works backwards from the end of a list. 
+print(players[-3:]) # what happens here:  list['omit', 'omit', -3, -2, -1]  keeps the last 3 elements only. 
+
+print('\n')
+
+
+# Looping through a slice:
+
+print("Here are the first three players on my team:")
+for player in players[:3]:
+    print(player.title())
+
+
+
+# Copying a List:
+
+my_foods = ['pizza', 'falafel', 'carrot-cake']
+friend_foods = my_foods[:]   # copies exact list to a completely new list. if we had used 'friend_foods = my_foods' it would have just changed the variable/name of the same list. 
+print(f'\nMy favorite foods are: \n{my_foods}')
+print(f"\nMy friend's favorite foods are: \n{friend_foods}")  
+
+my_foods.append('cannoli')    # add different items to the lists to prove they are separate independent lists. 
+friend_foods.append('french-fries')
+print(f'\nMy favorite foods are: \n{my_foods}')
+print(f"\nMy friend's favorite foods are: \n{friend_foods}")  
