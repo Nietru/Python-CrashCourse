@@ -141,6 +141,16 @@ print("\nPizza is completed!")  # if-elif-else chain would NOT work because the 
 requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
 
 for requested_topping in requested_toppings:
-    print(f"\nAdding {requested_topping}")  # runs through each item/element in the list.
-print("\nPizza Completed!")
+    print(f"\nAdding {requested_topping}")
+print("\nPizza Completed!")  # A simple for loop: prints single statement for each item/element in the list.
 
+
+requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']  # adding an if statement for missing ingredient from list:
+for requested_topping in requested_toppings:
+    if requested_topping == 'green peppers':
+        print("\nSorry, we are out of green peppers right now.")
+    else:
+        print(f"\nAdding {requested_topping}")
+print("\nPizza Completed!") 
+
+# page 86 (bottom)
