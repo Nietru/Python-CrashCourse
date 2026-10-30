@@ -21,7 +21,7 @@ else:
 
 print('I predict True: Atleast one person is old enough to buy rated R movie tickets:')  # using or operator.
 if age_0 or age_1 >=21:
-    print('True: Atleast one of these friends is old enough to purchase rated R movie tickets.')
+    print('True: Atleast one of these friends is old enough to purchase rated R movie tickets.\n')
 else:
     print('False: neither of these people are over age 18. They cannot purchase rated R movie tickets.\n')
 
@@ -45,6 +45,6 @@ pizza_toppings = ['pepperoni', 'pineapple', 'bacon']
 requested_topping = 'anchovy'
 
 if requested_topping not in pizza_toppings:
-    print('Special order coming through!')
+    print('\nSpecial order coming through!')
 else:
-    print('Make the usual!')
+    print('\nMake the usual!')

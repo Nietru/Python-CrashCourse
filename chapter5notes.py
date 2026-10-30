@@ -83,3 +83,52 @@ user = 'marle'
 if user not in banned_users:
     print(f'{user.title()}, you can post a response.')
 
+# The if-elif-else Chain:
+
+age = 12
+
+if age < 4:
+    print('\nYour admission cost = $0')
+elif age < 18:
+    print('\nYour admission cost = $5.00')  # program only runs elif if the if portion failed, and so on.
+else:
+    print('\nYour admission cost = $8.00')
+
+# A more concise way of running this program ^ is:
+
+age = 12
+
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 5
+else:
+    price = 10
+
+print(f"Your admission cost = ${price}.00.\n")   # saves time if you need to make changes later on. Change one print stmt instead of 3.
+
+age = 67
+
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 5
+elif age > 64:  # added a senior discount
+    price = 8    
+elif age <= 64:  # normal adult full-price. else-block omitted: python does not require an 'else' block.
+    price = 10
+
+print(f"Your admission cost = ${price}.00.\n")
+
+# The if-elif-else chain is good for checking ONE condition. If you need to check for more than one, a series of if-statements is the way to go.
+
+requested_toppings = ['mushrooms', 'extra-cheese']
+
+if 'mushrooms' in requested_toppings:
+    print("Adding mushrooms.")
+if 'pepperoni' in requested_toppings:
+    print("Adding pepperoni")           # does not print because it is not in the list (customer's pizza order)
+if 'extra-cheese' in requested_toppings:
+    print("Adding extra cheese.")
+
+print("\nPizza is completed!")  # if-elif-else chain would NOT work because the code would stop running after 'mushrooms' - condition would be "met".
