@@ -153,4 +153,26 @@ for requested_topping in requested_toppings:
         print(f"\nAdding {requested_topping}")
 print("\nPizza Completed!") 
 
-# page 86 (bottom)
+# Checking that a List is Not Empty:
+
+requested_toppings = []
+
+if requested_toppings:
+    for requested_topping in requested_toppings:
+        print(f"\nAdding {requested_topping}")  # if the list is NOT empty, it will print each topping/element in the list.
+    print("\nPizza Completed!")
+else:
+    print("\nAre you sure you want a plain pizza?")
+
+# Using Multiple Lists:
+
+available_toppings = ['mushrooms', 'olives', 'green peppers', 'pepperoni', 'pineapple', 'extra cheese']   # define list of available toppings
+requested_toppings = ['mushrooms', 'french fries', 'extra cheese']  # customer requests toppings, some of which are not available.
+
+for requested_topping in requested_toppings:
+    if requested_topping in available_toppings:
+        print(f"\nAdding {requested_topping}")  # checks if the requested topping is in the available toppings list. If so, prints this each available topping.
+    else:
+        print(f"\nSorry, we don't have {requested_topping}.") # checks if the requested topping is in the available toppings list. If not, prints this for each unavailable topping.
+
+print("\nPizza Completed!") 
