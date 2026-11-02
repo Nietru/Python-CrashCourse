@@ -17,4 +17,35 @@ alien_0['color'] = 'green'
 alien_0['points'] = 5
 print(alien_0)
 
-# page 95 - top
+print(f'\nThe alien is {alien_0["color"]}.')
+alien_0['color'] = 'yellow'   # changing the value of a key in your dictionary. now the alien is yellow.
+print(f'\nThe alien is now{alien_0["color"]}.')
+
+
+# More interesting usage of changing the values in a dictionary:
+alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}
+print(f"\nOriginal position: {alien_0['x_position']}")
+
+# move the alien to the right (imagining creating simple video game)
+
+# determine how far to move the alien using its current speed:
+if alien_0['speed'] == 'slow':
+    x_increment = 1
+elif alien_0['speed'] == 'medium':
+    x_increment = 2
+else:
+    x_increment = 3  # speedy gonzales
+
+alien_0['x_position'] = alien_0['x_position'] + x_increment  # the new position is the old position + the associated x_increment.
+
+print(f'New position: {alien_0['x_position']}\n')  # prints 'New position: 2' because our dictionary has 'medium' value for 'speed'
+
+
+# Removing key-value pairs:   Be away that deleting a key-val pair permanently removes it.
+
+alien_0 = {'color': 'green', 'points': 5}
+print(alien_0)
+del alien_0['points']
+print(alien_0)
+
+# top page 97
