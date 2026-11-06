@@ -19,7 +19,7 @@ print(alien_0)
 
 print(f'\nThe alien is {alien_0["color"]}.')
 alien_0['color'] = 'yellow'   # changing the value of a key in your dictionary. now the alien is yellow.
-print(f'\nThe alien is now{alien_0["color"]}.')
+print(f'\nThe alien is now {alien_0["color"]}.')
 
 
 # More interesting usage of changing the values in a dictionary:
@@ -41,11 +41,32 @@ alien_0['x_position'] = alien_0['x_position'] + x_increment  # the new position 
 print(f'New position: {alien_0['x_position']}\n')  # prints 'New position: 2' because our dictionary has 'medium' value for 'speed'
 
 
-# Removing key-value pairs:   Be away that deleting a key-val pair permanently removes it.
+# Removing key-value pairs:   Be aware that deleting a key-val pair permanently removes it.
 
 alien_0 = {'color': 'green', 'points': 5}
 print(alien_0)
 del alien_0['points']
 print(alien_0)
 
-# top page 97
+
+# A dictionary of similar objects:
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',  # good practice to have a comma after last entry, so you're ready to add more potentially.
+}
+
+language = favorite_languages['sarah'].title()  # creates new variable language.
+print(f"\nSarah's favorite language is {language}.")
+
+# Using get() to access values:
+
+# alien_0 = {'color': 'green', 'speed': 'slow'}
+# print(alien_0['points'])     # throws an error of course, 'points' is not a current key in the alien_0 dictionary.
+
+
+# with the get() method, you can set a default value for if a key doesnt exist:
+point_value = alien_0.get('points', 'No point value assigned.')
+print(point_value)  # if you leave out the 'value' instead of the 'key', python returns 'none'
